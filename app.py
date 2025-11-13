@@ -25,7 +25,7 @@ def info():
     nomes = {
         "Nomes" : "Gustavo Muniz e Vinicius Marcon"
     }
-    return jsonfy(nomes)
+    return jsonify(nomes)
 
 @app.route("/metricas")
 def metrica(): 
