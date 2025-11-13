@@ -22,7 +22,10 @@ def coletar_metricas():
 
 @app.route("/info")
 def info():
-    return "Nomes: Gustavo Muniz e Vinicius Marcon"
+    nomes = {
+        "Nomes" : "Gustavo Muniz e Vinicius Marcon""
+    }
+    return jsonfy(nomes)
 
 @app.route("/metrica")
 def metrica(): 
